@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact Optitude360 | Confidential Enquiry</title>
+<meta name="description" content="Start a confidential conversation with Optitude360 about your next critical appointment. Every enquiry is handled by a senior team member.">
+<link rel="canonical" href="https://optitude360.com/contact/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact Optitude360 | Confidential Enquiry">
+<meta property="og:description" content="Start a confidential conversation about your next critical appointment.">
+<meta property="og:url" content="https://optitude360.com/contact/">
+<link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="/">Optitude<span>360</span></a>
+    <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="nav" id="site-nav" data-nav aria-expanded="false" aria-label="Primary">
+      <a href="/approach/">Approach</a><a href="/services/">Services</a><a href="/who-we-help/">Who We Help</a><a href="/insights/">Insights</a><a href="/about/">About</a><a href="/contact/" class="nav-cta">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="container">
+  <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">/</span> <span aria-current="page">Contact</span></nav>
+  <section class="tight">
+    <p class="eyebrow">Contact</p>
+    <h1>Start a confidential conversation.</h1>
+    <p class="lede">Tell us, in your own words, what you are considering. Every enquiry is treated as confidential and is reviewed personally by a senior member of the firm — never routed through an automated queue.</p>
+
+    <form id="enquiry-form" class="form" style="margin-top:32px" novalidate>
+      <div class="field">
+        <label for="name">Your name</label>
+        <input id="name" name="name" type="text" autocomplete="name" required>
+        <span class="hint">How we should address you.</span>
+      </div>
+      <div class="field">
+        <label for="email">Work email</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+        <span class="hint">We will use this only to reply to your enquiry.</span>
+      </div>
+      <div class="field">
+        <label for="company">Company or organisation</label>
+        <input id="company" name="company" type="text" autocomplete="organization">
+        <span class="hint">Optional — helps us understand the context.</span>
+      </div>
+      <div class="field">
+        <label for="role">Your role</label>
+        <input id="role" name="role" type="text" autocomplete="organization-title">
+        <span class="hint">Optional — for example, Chair, Founder, Chief People Officer.</span>
+      </div>
+      <div class="field">
+        <label for="topic">What are you considering?</label>
+        <select id="topic" name="topic" required>
+          <option value="">Please select</option>
+          <option>Executive Search</option>
+          <option>Critical Hire / Candidate Assessment</option>
+          <option>CEO / Board Succession</option>
+          <option>Interim Executive</option>
+          <option>Leadership Assessment</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="message">Anything else</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <span class="hint">A brief outline is enough; we will take it from there.</span>
+      </div>
+      <label class="consent">
+        <input type="checkbox" id="consent" name="consent" required>
+        <span>I am happy for Optitude360 to contact me about my enquiry using the details I have provided. I understand I can ask you to stop at any time. This box is left unticked, and we do not add you to any mailing list.</span>
+      </label>
+      <div class="hero-actions">
+        <button type="submit" class="btn btn-primary">Start the Conversation</button>
+      </div>
+      <p id="form-status" role="status" aria-live="polite"></p>
+    </form>
+
+    <p class="hint" style="margin-top:24px">Direct contact: [OWNER REVIEW REQUIRED — telephone and email address]. Your message is used only to respond to your enquiry, kept to the minimum needed, and not shared for marketing. See our <a href="/privacy-policy/">Privacy Policy</a>.</p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><div class="footer-brand">Optitude360</div><p>Executive search with psychological precision. De-risking the leadership decisions that matter most.</p></div>
+      <div><h4>Explore</h4><a href="/approach/">Approach</a><a href="/services/">Services</a><a href="/who-we-help/">Who We Help</a><a href="/insights/">Insights</a></div>
+      <div><h4>Company</h4><a href="/about/">About</a><a href="/about/simon-childs/">Simon Childs</a><a href="/contact/">Contact</a></div>
+      <div><h4>Legal</h4><a href="/privacy-policy/">Privacy Policy</a><a href="/cookie-policy/">Cookie Policy</a></div>
+    </div>
+    <div class="footer-legal"><span>© 2026 Optitude360. All rights reserved.</span><span>[OWNER REVIEW REQUIRED — registered business name, address, company number]</span></div>
+  </div>
+</footer>
+<div class="consent-banner" id="consent-banner" hidden role="region" aria-label="Cookie consent">
+  <div class="container">
+    <p>We use cookies only where necessary, and we do not set optional analytics tracking until you choose to allow it. See our <a href="/cookie-policy/" style="color:#fff;text-decoration:underline">Cookie Policy</a>.</p>
+    <div class="consent-actions"><button id="consent-decline">Essential only</button><button id="consent-accept" class="primary">Accept</button></div>
+  </div>
+</div>
+<script src="/assets/js/main.js"></script>
+<script>
+(function () {
+  'use strict';
+  var form = document.getElementById('enquiry-form');
+  var status = document.getElementById('form-status');
+  var email = ''; /* [OWNER REVIEW REQUIRED] set the enquiry email address here */
+  if (!form) { return; }
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (!form.checkValidity()) { form.reportValidity(); return; }
+    if (!document.getElementById('consent').checked) {
+      status.textContent = 'Please tick the consent box so we can respond to your enquiry.';
+      status.style.color = '#8a3324';
+      return;
+    }
+    var d = new FormData(form);
+    var subject = 'Enquiry — ' + (d.get('topic') || 'General');
+    var body = 'Name: ' + d.get('name') +
+      '\nEmail: ' + d.get('email') +
+      '\nOrganisation: ' + (d.get('company') || '—') +
+      '\nRole: ' + (d.get('role') || '—') +
+      '\nConsidering: ' + (d.get('topic') || '—') +
+      '\n\n' + d.get('message');
+    status.style.color = '';
+    if (email) {
+      window.location.href = 'mailto:' + email + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+      status.textContent = 'Opening your email client to send your enquiry…';
+    } else {
+      status.textContent = 'Thank you. Your enquiry is prepared — please send it to us directly, or call. [OWNER REVIEW REQUIRED: configure the enquiry email address and a form endpoint.]';
+    }
+  });
+})();
+</script>
+</body>
+</html>

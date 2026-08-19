@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Generative AI and answer-engine crawlers are permitted — Optitude360 content
+# is designed to be surfaced in AI search experiences.
+User-agent: GPTBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: CCBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+
+Sitemap: https://optitude360.com/sitemap.xml
