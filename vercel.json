@@ -1,0 +1,24 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/our-approach/", "destination": "/approach/", "permanent": true },
+    { "source": "/our-method/", "destination": "/approach/how-we-assess-leadership/", "permanent": true },
+    { "source": "/our-edge/", "destination": "/approach/executive-search-psychology/", "permanent": true },
+    { "source": "/solutions/", "destination": "/services/", "permanent": true },
+    { "source": "/blog/", "destination": "/insights/", "permanent": true },
+    { "source": "/leadership-briefings/", "destination": "/insights/", "permanent": true },
+    { "source": "/services/judgment-search/", "destination": "/services/executive-search/", "permanent": true },
+    { "source": "/services/succession/", "destination": "/services/ceo-board-succession/", "permanent": true },
+    { "source": "/services/interim-leaders/", "destination": "/services/interim-executive-leadership/", "permanent": true },
+    { "source": "/the-roster/", "destination": "/about/", "permanent": true },
+    { "source": "/history/", "destination": "/about/", "permanent": true },
+    { "source": "/team/", "destination": "/about/", "permanent": true },
+    { "source": "/careers/", "destination": "/about/", "permanent": true },
+    { "source": "/faq/", "destination": "/contact/", "permanent": true },
+    { "source": "/price-plan/", "destination": "/", "permanent": true },
+    { "source": "/sample-page/", "destination": "/", "permanent": true },
+    { "source": "/refund_returns/", "destination": "/", "permanent": true },
+    { "source": "/2025/:path*", "destination": "/insights/", "permanent": true }
+  ]
+}
